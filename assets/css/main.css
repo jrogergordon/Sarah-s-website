@@ -8603,5 +8603,136 @@ input, select, textarea {
 			}
 
 .journal1 {
-	font-size: 80%;
+	font-size: 100%;
+}
+
+
+.dream_audio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    top: 50px;
+}
+
+.dream_cell {
+    min-width: 340px;
+    min-height: 120px;
+	border-radius: 20px;
+	padding-left: 30px;
+	padding: 20px;
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+}
+
+.audio_box {
+	min-width: 310px;
+	border-radius: 20px;
+	padding: 30px;
+}
+
+.title_audio {
+	color: rgb(0, 0, 0);
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	margin: auto;
+	max-width: 230px;
+	text-decoration: underline;	
+	padding-top: 0%;
+}
+
+.audio_3 {
+	color: #000;
+}
+
+.key_box {
+	padding: 30px;
+	min-height: 200px;
+	max-width: 50%;
+	background-color: #5c5c5c;
+	border-radius: 100px;
+	position: relative;
+	left: 27%;
+}
+
+.key_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    top: 50px;
+}
+
+.key_grid2 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	position: relative;
+	top: 50px;
+	left: 16%;
+}
+
+.box_2 {
+	background-color: #3cf9ff;
+}
+
+.box_3 {
+	background-color: rgb(255, 54, 54);
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+}
+
+.box_4 {
+	background-color: rgb(7, 255, 7);
+}
+
+.box_1 {
+	background-color: rgb(253, 145, 255);
+}
+
+.box_5 {
+	background-color: rgb(255, 192, 33);
+}
+
+.audio_box_one {
+	background-color: rgb(255, 54, 54);
+}
+
+.audio_box_two {
+
+}
+
+.audio_box_three {
+
+}
+
+.audio_box_four {
+
+}
+
+.audio_box_five {
+	
+}
+
+.love {
+	padding-left: 40px;
+	padding-top: 40px;
+	font-size: larger;
+	font-weight: bold;
+}
+.love_image {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.sexy_love {
+	padding-left: 24px;
+	padding-top: 20px;
+	font-size: larger;
+	font-weight: bold;	
+}
+
+.sick {
+	padding-left: 35px;
+	/* padding-top: 20px; */
+	font-size: larger;
+	font-weight: bold;	
 }
