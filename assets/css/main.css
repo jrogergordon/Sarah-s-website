@@ -8609,9 +8609,10 @@ input, select, textarea {
 
 .dream_audio {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     position: relative;
     top: 50px;
+	left: -60px;
 }
 
 .dream_cell {
@@ -8626,13 +8627,18 @@ input, select, textarea {
 }
 
 .audio_box {
-	min-width: 310px;
-	border-radius: 20px;
-	padding: 30px;
+	min-width: 340px;
+	border-radius: 80px;
+	padding: 20px;
+	max-height: 200px;
+}
+.audio_controls {
+	position: relative;
+	left: 4px;
 }
 
 .title_audio {
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	margin: auto;
 	max-width: 230px;
@@ -8646,7 +8652,7 @@ input, select, textarea {
 
 .key_box {
 	padding: 30px;
-	min-height: 200px;
+	min-height: 160px;
 	max-width: 50%;
 	background-color: #5c5c5c;
 	border-radius: 100px;
@@ -8670,46 +8676,60 @@ input, select, textarea {
 }
 
 .box_2 {
-	background-color: #3cf9ff;
+	background-image: url(/images/jacob_dildo.jpg);
 }
+
 
 .box_3 {
-	background-color: rgb(255, 54, 54);
-	display: flex;
-	align-items: baseline;
-	justify-content: space-between;
+	background-image: url(/images/sexy_water.jpg);
 }
+
+
 
 .box_4 {
-	background-color: rgb(7, 255, 7);
+	background-image: url(/images/sick_face.jpg);
 }
+
 
 .box_1 {
-	background-color: rgb(253, 145, 255);
+	background-image: url(/images/jacob_love.jpg);
 }
 
+
 .box_5 {
-	background-color: rgb(255, 192, 33);
+	background-image: url(/images/gibberish.jpg);
+}
+.key_hover:hover {
+	filter: brightness(100%);
+	transition: filter 0.3s ease-in-out;
+}
+
+.key_text{
+	color: white;
 }
 
 .audio_box_one {
-	background-color: rgb(255, 54, 54);
+	background-image: url(/images/jacob_love_clone.jpg);
 }
+/* .audio_box:hover {
+	filter: brightness(50%);
+	transition: filter 0.3s ease-in-out;
+} */
 
 .audio_box_two {
-
+	background-image: url(/images/jacob_dildo_clone.jpg);
 }
 
 .audio_box_three {
-
+	background-image: url(/images/sexy_water_clone.jpg);
 }
 
 .audio_box_four {
-
+	background-image: url(/images/sick_face_clone.jpg);
 }
 
 .audio_box_five {
-	
+	background-image: url(/images/gibberish_clone.jpg);
 }
 
 .love {
@@ -8717,10 +8737,6 @@ input, select, textarea {
 	padding-top: 40px;
 	font-size: larger;
 	font-weight: bold;
-}
-.love_image {
-	max-height: 100%;
-	max-width: 100%;
 }
 
 .sexy_love {
@@ -8731,8 +8747,48 @@ input, select, textarea {
 }
 
 .sick {
-	padding-left: 35px;
+	padding-left: 30px;
 	/* padding-top: 20px; */
 	font-size: larger;
 	font-weight: bold;	
+}
+
+.audio_image {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.meme {
+	padding-left: 24px;
+	padding-top: 20px;
+	font-size: larger;
+	font-weight: bold;	
+}
+
+.spacer {
+	min-width: 30px;
+	min-height: 180px;
+}
+
+.gibberish {
+	padding-left: 17px;
+	padding-top: 40px;
+	font-size: larger;
+	font-weight: bold;
+}
+
+.darkened {
+	filter: brightness(50%);
+}
+
+.superDark {
+	filter: brightness(10%);
+}
+
+.lightened {
+	filter: brightness(100%);
+}
+
+.hidden {
+	display: none;
 }
