@@ -8676,28 +8676,28 @@ input, select, textarea {
 }
 
 .box_2 {
-	background-image: url(/images/jacob_dildo.jpg);
+	background-image: url(../images/jacob_dildo.jpg);
 }
 
 
 .box_3 {
-	background-image: url(/images/sexy_water.jpg);
+	background-image: url(../images/sexy_water.jpg);
 }
 
 
 
 .box_4 {
-	background-image: url(/images/sick_face.jpg);
+	background-image: url(../images/sick_face.jpg);
 }
 
 
 .box_1 {
-	background-image: url(/images/jacob_love.jpg);
+	background-image: url(../images/jacob_love.jpg);
 }
 
 
 .box_5 {
-	background-image: url(/images/gibberish.jpg);
+	background-image: url(../images/gibberish.jpg);
 }
 .key_hover:hover {
 	filter: brightness(100%);
@@ -8709,7 +8709,7 @@ input, select, textarea {
 }
 
 .audio_box_one {
-	background-image: url(/images/jacob_love_clone.jpg);
+	background-image: url(../images/jacob_love_clone.jpg);
 }
 /* .audio_box:hover {
 	filter: brightness(50%);
@@ -8717,19 +8717,19 @@ input, select, textarea {
 } */
 
 .audio_box_two {
-	background-image: url(/images/jacob_dildo_clone.jpg);
+	background-image: url(../images/jacob_dildo_clone.jpg);
 }
 
 .audio_box_three {
-	background-image: url(/images/sexy_water_clone.jpg);
+	background-image: url(../images/sexy_water_clone.jpg);
 }
 
 .audio_box_four {
-	background-image: url(/images/sick_face_clone.jpg);
+	background-image: url(../images/sick_face_clone.jpg);
 }
 
 .audio_box_five {
-	background-image: url(/images/gibberish_clone.jpg);
+	background-image: url(../images/gibberish_clone.jpg);
 }
 
 .love {
