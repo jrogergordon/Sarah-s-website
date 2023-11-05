@@ -8621,11 +8621,16 @@ input, select, textarea {
     position: relative;
 }
 
-.image_grid_bar {
+.grid_bar_final {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(5, 1fr);
 	position: relative;
+	border: #876287 solid 5px;
+	padding-right: 35px;
+	border-radius: 30px;
 }
+
+
 
 
 .dream_cell {
@@ -8678,7 +8683,7 @@ input, select, textarea {
     grid-template-columns: repeat(3, 1fr);
     position: relative;
     top: 50px;
-	left: -8%;
+	left: 0%;
 }
 
 .key_grid2 {
@@ -8686,7 +8691,7 @@ input, select, textarea {
 	grid-template-columns: repeat(3, 1fr);
 	position: relative;
 	top: 50px;
-	left: 8%;
+	left: 16%;
 }
 
 
@@ -8802,20 +8807,67 @@ input, select, textarea {
 }
 
 .spacer_small {
-	min-width: 90px;
+	min-width: 30px;
 	min-height: 180px;
 }
 
 .mini-spacer {
-
+	max-width: 200px;
 }
+
+.image_grid_bar {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	position: relative;
+}
+
+.image_grid_bar_interior {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	position: relative;
+}
+
+/* .Special_title {
+	display: flex;
+	align-items: center;
+	position: relative;
+} */
+
+/* #special_text {
+	border:#000 solid 2px;
+	padding-left: 98px;
+	min-width: 240px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	text-decoration: underline;
+	color: #000000;
+	font-size: large;
+} */
 
 .grid_image {
 	background-image: url("../../images/fullSpanish.jpg");
 	border-radius: 20%;
-	min-width: 160%;
+	min-width: 195%;
 	max-height: 90%;
 }
+
+
+.grid_image_right {
+	background-image: url("../../images/fullSpanish.jpg");
+	border-radius: 20%;
+	min-width: 175%;
+	max-height: 90%;
+}
+
+.image_right {
+	border-radius: 20%;
+	max-height: 30px;
+}
+
+#spacer1 {
+	min-width: 1px;
+}
+
 
 .gibberish {
 	padding-left: -3px;
@@ -8851,4 +8903,56 @@ input, select, textarea {
 .audio_box:hover {
 	filter: brightness(100%);
 	transition: filter 0.3s ease-in-out;
+}
+
+.modal {
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 1;
+	/* Sit on top */
+	padding-top: 100px;
+	/* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: auto;
+	/* Enable scroll if needed */
+	background-color: rgb(0, 0, 0);
+	/* Fallback color */
+	background-color: rgba(0, 0, 0, 0.9);
+	/* Black w/ opacity */
+}
+
+.close_modal {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.modal-content {
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+
+.modal-content {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+}
+
+.close_modal:hover,
+.close_modal:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
 }

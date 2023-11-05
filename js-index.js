@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let boxThree = document.querySelector('.box_3');
     let boxFour = document.querySelector('.box_4');
     let boxFive = document.querySelector('.box_5');
-    let boxSix = document.querySelector('.box_6');
 
     let audioBoxTwo = document.querySelectorAll('.audio_box_two');
     let playBoxTwo = document.querySelectorAll('div.audio_box_two > audio.hidden');
@@ -17,8 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let playBoxFour = document.querySelectorAll('div.audio_box_four > audio.hidden');
     let audioBoxFive = document.querySelectorAll('.audio_box_five');
     let playBoxFive = document.querySelectorAll('div.audio_box_five > audio.hidden');
-    let audioBoxSix = document.querySelectorAll('.audio_box_six');
-    let playBoxSix = document.querySelectorAll('div.audio_box_six > audio.hidden');
     // document.querySelectorAll("div.note, div.alert");
 
     function clickedAudioKey(clickedKey, audioClips, audioBox) {
@@ -65,9 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
         clickedAudioKey(boxFive, audioBoxFive, playBoxFive)
     });
 
-    boxSix.addEventListener('click', () => {
-        clickedAudioKey(boxSix, audioBoxSix, playBoxSix)
-    });
     
     
     function clickedThumb(thumbCell, thumbAudio) {
@@ -279,7 +273,17 @@ document.addEventListener("DOMContentLoaded", () => {
         clickedThumb(thirtythree, thirtythreeAudio)
     });
 
+    let modal = document.getElementById("myModal");
+    let evan = document.getElementById("evan");
+    let modalImg = document.getElementById("img01");
 
-    
+    evan.addEventListener('click',  () =>  {
+        modal.style.display = "block";
+        modalImg.src = "/images/evanNooooo.JPG"
+    })
+    let span = document.getElementsByClassName("close_modal")[0];
 
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
 })
