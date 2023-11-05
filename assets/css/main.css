@@ -8609,11 +8609,24 @@ input, select, textarea {
 
 .dream_audio {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     position: relative;
     top: 50px;
 	left: -60px;
 }
+
+.grid_bar {
+	display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    position: relative;
+}
+
+.image_grid_bar {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	position: relative;
+}
+
 
 .dream_cell {
     min-width: 340px;
@@ -8665,6 +8678,7 @@ input, select, textarea {
     grid-template-columns: repeat(3, 1fr);
     position: relative;
     top: 50px;
+	left: -8%;
 }
 
 .key_grid2 {
@@ -8672,8 +8686,9 @@ input, select, textarea {
 	grid-template-columns: repeat(3, 1fr);
 	position: relative;
 	top: 50px;
-	left: 16%;
+	left: 8%;
 }
+
 
 .box_2 {
 	background-image: url("../../images/jacob_dildo.jpg")
@@ -8698,6 +8713,12 @@ input, select, textarea {
 .box_5 {
 	background-image: url("../../images/gibberish.jpg")
 }
+
+.box_6 {
+	background-image: url("../../images/markSarah.jpg")
+}
+
+
 .key_hover:hover {
 	filter: brightness(100%);
 	transition: filter 0.3s ease-in-out;
@@ -8731,6 +8752,10 @@ input, select, textarea {
 	background-image: url("../../images/gibberish_clone.jpg");
 }
 
+.audio_box_six {
+	background-image: url("../../images/markSarah_clone.jpg");
+}
+
 .love {
 	padding-left: 40px;
 	padding-top: 40px;
@@ -8752,6 +8777,13 @@ input, select, textarea {
 	font-weight: bold;	
 }
 
+.miscellaneous {
+	padding-left: 0px;
+	padding-top: 25px;
+	font-size: larger;
+	font-weight: bold;	
+}
+
 .audio_image {
 	max-height: 100%;
 	max-width: 100%;
@@ -8769,8 +8801,24 @@ input, select, textarea {
 	min-height: 180px;
 }
 
+.spacer_small {
+	min-width: 90px;
+	min-height: 180px;
+}
+
+.mini-spacer {
+
+}
+
+.grid_image {
+	background-image: url("../../images/fullSpanish.jpg");
+	border-radius: 20%;
+	min-width: 160%;
+	max-height: 90%;
+}
+
 .gibberish {
-	padding-left: 17px;
+	padding-left: -3px;
 	padding-top: 40px;
 	font-size: larger;
 	font-weight: bold;
@@ -8790,4 +8838,17 @@ input, select, textarea {
 
 .hidden {
 	display: none;
+}
+
+#key_audio_spacer {
+	min-height: 80px;
+}
+
+#underline {
+	border-bottom: 3px dotted #000000;
+}
+
+.audio_box:hover {
+	filter: brightness(100%);
+	transition: filter 0.3s ease-in-out;
 }
