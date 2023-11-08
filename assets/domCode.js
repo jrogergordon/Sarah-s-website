@@ -297,28 +297,28 @@ document.addEventListener("DOMContentLoaded", () => {
         modalImg.src = content
     }
     evan.addEventListener('click',  () =>  {
-        showModal("/images/evanNooooo.JPG")
+        showModal("/images/bananaBread.jpg")
     })
 
     plinko.addEventListener('click', () => {
-        showModal("/images/plinko.jpg")
+        showModal("/images/bananaBread.jpg")
     })
 
     soup.addEventListener('click', () => {
-        showModal("/images/journal_1.jpg")
+        showModal("/images/bananaBread.jpg")
     })
 
     hallucination.addEventListener('click', () => {
-        showModal("/images/hallucination.jpg")
+        showModal("/images/bananaBread.jpg")
     }) 
     
     likeBook.addEventListener('click', () => {
-        showModal("/images/likeABook.jpg")
+        showModal("/images/bananaBread.jpg")
     }) 
 
 
     waiting.addEventListener('click', () => {
-        showModal("/images/waiting.jpg")
+        showModal("/images/bananaBread.jpg")
     }) 
 
     firstFlirt.addEventListener('click', () => {
