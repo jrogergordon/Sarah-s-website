@@ -432,11 +432,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }) 
 
     disneyFunny.addEventListener('click', () => {
-        showModal("/images/disneyFunny.jpg")
+        showModal("images/disneyFunny.jpg")
     }) 
 
     uwu.addEventListener('click', () => {
-        showModal("/images/uwu.jpg")
+        showModal("images/uwu.jpg")
     }) 
 
 
