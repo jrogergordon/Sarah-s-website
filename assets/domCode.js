@@ -326,7 +326,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }) 
 
     bBread.addEventListener('click', () => {
-        showModal("../images/bananaBread.jpg")
+        showModal("images/bananaBread.jpg")
     }) 
 
     let span = document.getElementById("myModal");
