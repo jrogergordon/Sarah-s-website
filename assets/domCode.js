@@ -294,7 +294,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function showModal(content) {
         modal.style.display = "block";
-        // modalImg.src = content
+        modalImg.src = content
     }
     evan.addEventListener('click',  () =>  {
         showModal("images/evanNooooo.JPG")
