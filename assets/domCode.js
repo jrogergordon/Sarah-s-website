@@ -297,36 +297,36 @@ document.addEventListener("DOMContentLoaded", () => {
         modalImg.src = content
     }
     evan.addEventListener('click',  () =>  {
-        showModal("/../images/evanNooooo.JPG")
+        showModal("../images/evanNooooo.JPG")
     })
 
     plinko.addEventListener('click', () => {
-        showModal("/../images/plinko.jpg")
+        showModal("../images/plinko.jpg")
     })
 
     soup.addEventListener('click', () => {
-        showModal("/../images/journal_1.jpg")
+        showModal("../images/journal_1.jpg")
     })
 
     hallucination.addEventListener('click', () => {
-        showModal("/../images/hallucination.jpg")
+        showModal("../images/hallucination.jpg")
     }) 
     
     likeBook.addEventListener('click', () => {
-        showModal("/../images/likeABook.jpg")
+        showModal("../images/likeABook.jpg")
     }) 
 
 
     waiting.addEventListener('click', () => {
-        showModal("/../images/waiting.jpg")
+        showModal("../images/waiting.jpg")
     }) 
 
     firstFlirt.addEventListener('click', () => {
-        showModal("/../images/firstFlirt.jpg")
+        showModal("../images/firstFlirt.jpg")
     }) 
 
     bBread.addEventListener('click', () => {
-        showModal("/../images/bananaBread.jpg")
+        showModal("../images/bananaBread.jpg")
     }) 
 
     let span = document.getElementById("myModal");
