@@ -22,16 +22,22 @@ document.addEventListener("DOMContentLoaded", () => {
         if (clickedKey.classList.contains('lightened')) {
             clickedKey.classList.remove('lightened');
             clickedKey.classList.add('key_hover')
+            let href = document.getElementById("view_audio234");
+            let href2 = href.getAttributeNode("href");
+            console.log(href2);
+            href.href="#key_grid2";
+            console.log(href2);
             for (let i = 0; i < audioClips.length; i++) {
                 audioClips[i].classList.add('darkened');
                 audioBox[i].classList.add('hidden');
             }
         } else {
-            let href = document.getElementById("view_audio");
+            let href = document.getElementById("view_audio234");
             let href2 = href.getAttributeNode("href");
             console.log(href2);
-            href.setAttribute("href", "#");
-            console.log(href2);
+            href.href = "#";
+            let href3 = href.getAttributeNode("href");
+            console.log(href3);
             clickedKey.classList.add('lightened');
             clickedKey.classList.remove('key_hover');
             for(let i = 0; i < audioClips.length; i++) {
@@ -274,14 +280,55 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     let modal = document.getElementById("myModal");
-    let evan = document.getElementById("evan");
     let modalImg = document.getElementById("img01");
+    let evan = document.getElementById("evan");
+    let plinko = document.getElementById("plinko");
+    let soup = document.getElementById("soup");
+    let hallucination = document.getElementById("hallucination");
+    let likeBook = document.getElementById("likeABook");
+    let biking = document.getElementById("firstBikeRide");
+    let waiting = document.getElementById("waiting")
+    let firstFlirt = document.getElementById("firstFlirt")
+    let bBread = document.getElementById("bBread")
 
-    evan.addEventListener('click',  () =>  {
+    function showModal(content) {
         modal.style.display = "block";
-        modalImg.src = "/images/evanNooooo.JPG"
+        modalImg.src = content
+    }
+    evan.addEventListener('click',  () =>  {
+        showModal("/images/evanNooooo.JPG")
     })
-    let span = document.getElementsByClassName("close_modal")[0];
+
+    plinko.addEventListener('click', () => {
+        showModal("/images/plinko.jpg")
+    })
+
+    soup.addEventListener('click', () => {
+        showModal("/images/journal_1.jpg")
+    })
+
+    hallucination.addEventListener('click', () => {
+        showModal("/images/hallucination.jpg")
+    }) 
+    
+    likeBook.addEventListener('click', () => {
+        showModal("/images/likeABook.jpg")
+    }) 
+
+
+    waiting.addEventListener('click', () => {
+        showModal("/images/waiting.jpg")
+    }) 
+
+    firstFlirt.addEventListener('click', () => {
+        showModal("/images/firstFlirt.jpg")
+    }) 
+
+    bBread.addEventListener('click', () => {
+        showModal("/images/bananaBread.jpg")
+    }) 
+
+    let span = document.getElementById("myModal");
 
     span.onclick = function () {
         modal.style.display = "none";

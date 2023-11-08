@@ -8625,8 +8625,8 @@ input, select, textarea {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	position: relative;
-	border: #876287 solid 5px;
-	padding-right: 35px;
+	border: #876287 solid 3px;
+	padding-right: 35px ;
 	border-radius: 30px;
 }
 
@@ -8950,9 +8950,16 @@ input, select, textarea {
 	max-width: 700px;
 }
 
+
+
 .close_modal:hover,
 .close_modal:focus {
 	color: #bbb;
 	text-decoration: none;
 	cursor: pointer;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
 }
