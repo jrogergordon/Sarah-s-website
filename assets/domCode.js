@@ -22,23 +22,23 @@ document.addEventListener("DOMContentLoaded", () => {
         if (clickedKey.classList.contains('lightened')) {
             clickedKey.classList.remove('lightened');
             clickedKey.classList.add('key_hover')
-            let href = document.getElementById("view_audio234");
-            let href2 = href.getAttributeNode("href");
-            console.log(href2);
-            href.setAttribute("href", "#key_grid2");
+            // let href = document.getElementById("view_audio234");
+            // let href2 = href.getAttributeNode("href");
+            // console.log(href2);
+            // href.setAttribute("href", "#key_grid2");
             // href.href = "#key_grid2";
-            console.log(href2);
+            // console.log(href2);
             for (let i = 0; i < audioClips.length; i++) {
                 audioClips[i].classList.add('darkened');
                 audioBox[i].classList.add('hidden');
             }
         } else {
-            let href = document.getElementById("view_audio234");
-            let href2 = href.getAttributeNode("href");
-            console.log(href2);
-            href.setAttribute("href", "#");
+            // let href = document.getElementById("view_audio234");
+            // let href2 = href.getAttributeNode("href");
+            // console.log(href2);
+            // href.setAttribute("href", "#");
             // href.href = "#";
-            console.log(href2);
+            // console.log(href2);
             clickedKey.classList.add('lightened');
             clickedKey.classList.remove('key_hover');
             for(let i = 0; i < audioClips.length; i++) {
