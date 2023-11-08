@@ -8963,3 +8963,16 @@ input, select, textarea {
   from {transform:scale(0)}
   to {transform:scale(1)}
 }
+
+.imageWide {
+	border: 0;
+	border-radius: 4px;
+	display: inline-block;
+	position: relative;
+}
+
+.firsts_grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	position: relative;
+}

@@ -1,10 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    let boxOne = document.querySelector('.box_1');
-    let boxTwo = document.querySelector('.box_2');
-    let boxThree = document.querySelector('.box_3');
-    let boxFour = document.querySelector('.box_4');
-    let boxFive = document.querySelector('.box_5');
+    let boxOne = document.getElementById('box_1.1');
+    let boxTwo = document.getElementById('box_2.1');
+    let boxThree = document.getElementById('box_3.1');
+    let boxFour = document.getElementById('box_4.1');
+    let boxFive = document.getElementById('box_5.1');
+    // let boxOneTwo = document.getElementById('box_1.2');
+    // let boxTwoTwo = document.getElementById('box_2.2');
+    // let boxThreeTwo = document.getElementById('box_3.2');
+    // let boxFourTwo = document.getElementById('box_4.2');
+    // let boxFiveTwo = document.getElementById('box_5.2');
 
     let audioBoxTwo = document.querySelectorAll('.audio_box_two');
     let playBoxTwo = document.querySelectorAll('div.audio_box_two > audio.hidden');
@@ -288,9 +293,26 @@ document.addEventListener("DOMContentLoaded", () => {
     let hallucination = document.getElementById("hallucination");
     let likeBook = document.getElementById("likeABook");
     let biking = document.getElementById("firstBikeRide");
-    let waiting = document.getElementById("waiting")
-    let firstFlirt = document.getElementById("firstFlirt")
-    let bBread = document.getElementById("bBread")
+    let waiting = document.getElementById("waiting");
+    let firstFlirt = document.getElementById("firstFlirt");
+    let bBread = document.getElementById("bBread");
+    let veryFirst = document.getElementById("veryFirst");
+    let breakup = document.getElementById("breakup");
+    let firstArt = document.getElementById("firstArt");
+    let threeVideos = document.getElementById("3videos");
+    let mother = document.getElementById("mother");
+    let finalWhy = document.getElementById("finalWhy");
+    let rapeOfEvan = document.getElementById("rapeOfEvan");
+    let bestPun = document.getElementById("bestPun");
+    let sssss = document.getElementById("sssss");
+    let soFunny = document.getElementById("soFunny");
+    let perfYou = document.getElementById("perfYou");
+    let firstSecond = document.getElementById("firstSecond");
+    let disneyFunny = document.getElementById("disneyFunny");
+    let uwu = document.getElementById("uwu");
+    
+
+
 
     function showModal(content) {
         modal.style.display = "block";
@@ -328,6 +350,75 @@ document.addEventListener("DOMContentLoaded", () => {
     bBread.addEventListener('click', () => {
         showModal("images/bananaBread.jpg")
     }) 
+
+    veryFirst.addEventListener('click', () => {
+        showModal("images/veryFirst.jpg")
+    }) 
+
+    breakup.addEventListener('click', () => {
+        showModal("images/breakup.jpg")
+    }) 
+
+    firstArt.addEventListener('click', () => {
+        showModal("images/firstArt.jpg")
+    }) 
+
+    threeVideos.addEventListener('click', () => {
+        showModal("images/3videos.jpg")
+    }) 
+
+    mother.addEventListener('click', () => {
+        showModal("images/mother.jpg")
+    }) 
+
+    finalWhy.addEventListener('click', () => {
+        showModal("images/finalWhy.jpg")
+    })    
+
+    rapeOfEvan.addEventListener('click', () => {
+        showModal("images/rapeOfNevin.jpg")
+    }) 
+    
+    nanking.addEventListener('click', () => {
+        showModal("images/longFormImprov.jpg")
+    }) 
+
+    bestPun.addEventListener('click', () => {
+        showModal("images/bestPun.jpg")
+    })
+    
+    sssss.addEventListener('click', () => {
+        showModal("images/improvStory.jpg")
+    })
+
+    soFunny.addEventListener('click', () => {
+        showModal("images/soFunny.jpg")
+    })
+
+    perfYou.addEventListener('click', () => {
+        showModal("images/performingWithYou.jpg")
+    })  
+    
+    pwease.addEventListener('click', () => {
+        showModal("images/pwease.jpg")
+    })  
+
+    julyCouple.addEventListener('click', () => {
+        showModal("images/julyCouple.jpg")
+    }) 
+    
+    firstSecond.addEventListener('click', () => {
+        showModal("images/firstSecond.jpg")
+    }) 
+
+    disneyFunny.addEventListener('click', () => {
+        showModal("/images/disneyFunny.jpg")
+    }) 
+
+    uwu.addEventListener('click', () => {
+        showModal("/images/uwu.jpg")
+    }) 
+
 
     let span = document.getElementById("myModal");
 
