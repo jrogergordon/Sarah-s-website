@@ -25,7 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
             let href = document.getElementById("view_audio234");
             let href2 = href.getAttributeNode("href");
             console.log(href2);
-            href.href="#key_grid2";
+            href.setAttribute("href", "#key_grid2");
+            // href.href = "#key_grid2";
             console.log(href2);
             for (let i = 0; i < audioClips.length; i++) {
                 audioClips[i].classList.add('darkened');
@@ -35,9 +36,9 @@ document.addEventListener("DOMContentLoaded", () => {
             let href = document.getElementById("view_audio234");
             let href2 = href.getAttributeNode("href");
             console.log(href2);
-            href.href = "#";
-            let href3 = href.getAttributeNode("href");
-            console.log(href3);
+            href.setAttribute("href", "#");
+            // href.href = "#";
+            console.log(href2);
             clickedKey.classList.add('lightened');
             clickedKey.classList.remove('key_hover');
             for(let i = 0; i < audioClips.length; i++) {
