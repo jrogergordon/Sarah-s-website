@@ -322,7 +322,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }) 
 
     firstFlirt.addEventListener('click', () => {
-        showModal("/images/firstFlirt.jpg")
+        showModal("/images/bananaBread.jpg")
     }) 
 
     bBread.addEventListener('click', () => {
