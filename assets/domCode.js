@@ -5,11 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
     let boxThree = document.getElementById('box_3.1');
     let boxFour = document.getElementById('box_4.1');
     let boxFive = document.getElementById('box_5.1');
-    // let boxOneTwo = document.getElementById('box_1.2');
-    // let boxTwoTwo = document.getElementById('box_2.2');
-    // let boxThreeTwo = document.getElementById('box_3.2');
-    // let boxFourTwo = document.getElementById('box_4.2');
-    // let boxFiveTwo = document.getElementById('box_5.2');
+    let boxOneTwo = document.getElementById('box_1.2');
+    let boxTwoTwo = document.getElementById('box_2.2');
+    let boxThreeTwo = document.getElementById('box_3.2');
+    let boxFourTwo = document.getElementById('box_4.2');
+    let boxFiveTwo = document.getElementById('box_5.2');
 
     let audioBoxTwo = document.querySelectorAll('.audio_box_two');
     let playBoxTwo = document.querySelectorAll('div.audio_box_two > audio.hidden');
@@ -23,10 +23,10 @@ document.addEventListener("DOMContentLoaded", () => {
     let playBoxFive = document.querySelectorAll('div.audio_box_five > audio.hidden');
     // document.querySelectorAll("div.note, div.alert");
 
-    function clickedAudioKey(clickedKey, audioClips, audioBox) {
-        if (clickedKey.classList.contains('lightened')) {
-            clickedKey.classList.remove('lightened');
-            clickedKey.classList.add('key_hover')
+    function clickedAudioKey(clickedKey, audioClips, audioBox, secondaryKey) {
+        if (!secondaryKey.classList.contains('hidden')) {
+            secondaryKey.classList.add('hidden');
+            clickedKey.classList.remove('hidden')
             // let href = document.getElementById("view_audio234");
             // let href2 = href.getAttributeNode("href");
             // console.log(href2);
@@ -44,8 +44,8 @@ document.addEventListener("DOMContentLoaded", () => {
             // href.setAttribute("href", "#");
             // href.href = "#";
             // console.log(href2);
-            clickedKey.classList.add('lightened');
-            clickedKey.classList.remove('key_hover');
+            clickedKey.classList.add('hidden');
+            secondaryKey.classList.remove('hidden');
             for(let i = 0; i < audioClips.length; i++) {
                 audioClips[i].classList.remove('darkened');
                 audioBox[i].classList.remove('hidden');
@@ -53,25 +53,45 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
     boxOne.addEventListener('click', () => {
-        clickedAudioKey(boxOne, audioBoxOne, playBoxOne)
+        clickedAudioKey(boxOne, audioBoxOne, playBoxOne, boxOneTwo)
     }); 
 
+    boxOneTwo.addEventListener('click', () => {
+        clickedAudioKey(boxOne, audioBoxOne, playBoxOne, boxOneTwo)
+    }); 
+
+
     boxTwo.addEventListener('click', () => {
-        clickedAudioKey(boxTwo, audioBoxTwo, playBoxTwo)
+        clickedAudioKey(boxTwo, audioBoxTwo, playBoxTwo, boxTwoTwo)
+    }); 
+
+    boxTwoTwo.addEventListener('click', () => {
+        clickedAudioKey(boxTwo, audioBoxTwo, playBoxTwo, boxTwoTwo)
     }); 
 
     boxThree.addEventListener('click', () => {
-        clickedAudioKey(boxThree, audioBoxThree, playBoxThree)
+        clickedAudioKey(boxThree, audioBoxThree, playBoxThree, boxThreeTwo)
+    }); 
+
+    boxThreeTwo.addEventListener('click', () => {
+        clickedAudioKey(boxThree, audioBoxThree, playBoxThree, boxThreeTwo)
     }); 
 
     
-
     boxFour.addEventListener('click', () => {
-        clickedAudioKey(boxFour, audioBoxFour, playBoxFour)
+        clickedAudioKey(boxFour, audioBoxFour, playBoxFour, boxFourTwo)
+    }); 
+
+    boxFourTwo.addEventListener('click', () => {
+        clickedAudioKey(boxFour, audioBoxFour, playBoxFour, boxFourTwo)
     }); 
 
     boxFive.addEventListener('click', () => {
-        clickedAudioKey(boxFive, audioBoxFive, playBoxFive)
+        clickedAudioKey(boxFive, audioBoxFive, playBoxFive, boxFiveTwo)
+    });
+
+    boxFiveTwo.addEventListener('click', () => {
+        clickedAudioKey(boxFive, audioBoxFive, playBoxFive, boxFiveTwo)
     });
 
     

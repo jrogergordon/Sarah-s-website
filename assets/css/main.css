@@ -8976,3 +8976,7 @@ input, select, textarea {
 	grid-template-columns: repeat(2, 1fr);
 	position: relative;
 }
+
+.eraseUnder {
+	text-decoration: none
+}
