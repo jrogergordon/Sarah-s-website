@@ -312,7 +312,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let soup = document.getElementById("soup");
     let hallucination = document.getElementById("hallucination");
     let likeBook = document.getElementById("likeABook");
-    let biking = document.getElementById("firstBikeRide");
     let waiting = document.getElementById("waiting");
     let firstFlirt = document.getElementById("firstFlirt");
     let bBread = document.getElementById("bBread");
@@ -321,7 +320,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let firstArt = document.getElementById("firstArt");
     let threeVideos = document.getElementById("3videos");
     let mother = document.getElementById("mother");
-    let finalWhy = document.getElementById("finalWhy");
     let rapeOfEvan = document.getElementById("rapeOfEvan");
     let bestPun = document.getElementById("bestPun");
     let sssss = document.getElementById("sssss");
@@ -389,10 +387,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     mother.addEventListener('click', () => {
         showModal("images/mother.jpg")
-    }) 
-
-    finalWhy.addEventListener('click', () => {
-        showModal("images/finalWhy.jpg")
     })    
 
     rapeOfEvan.addEventListener('click', () => {
