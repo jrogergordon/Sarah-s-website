@@ -330,7 +330,11 @@ document.addEventListener("DOMContentLoaded", () => {
     let uwu = document.getElementById("uwu");
     
 
+    let cover = document.getElementById("present");
 
+    cover.addEventListener('click', () => {
+        cover.classList.add('hidden');
+    })
 
     function showModal(content) {
         modal.style.display = "block";
